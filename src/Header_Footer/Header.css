@@ -1,0 +1,46 @@
+.Header {
+    position: fixed;
+    top: 0px;
+    background-image: url(../imgs/header_estilos_de_roupa.png);
+    background-size: 100%;
+    width: 96vw;
+    height: 65px;
+    color: rgb(219, 196, 255);
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.formLogin {    
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    width: 120px;
+    height: 70px;
+    background-color: #1f1f61;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.contentForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.formLogin label {
+    font-size: 10px;
+}
+
+.contentForm input {
+    width: 60px;
+    font-size: 10px;
+    margin: 1px;
+
+}
+
+.contentForm button {
+    width: 30px;
+    border-radius: 10px;
+    font-size: 10px;
+}

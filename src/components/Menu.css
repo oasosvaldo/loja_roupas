@@ -1,0 +1,51 @@
+.menu {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #1f1f61;
+    list-style: none;
+    height: 50px;
+}
+
+.menu ul li {    
+    margin: 5px;
+    padding: 3px;
+    width: 110px;
+    background-color: #5353a6;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.451);
+}
+.menu ul li:hover {
+    background-color: #fffaff;
+}
+
+.menu ul li a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #1f1f61;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: 130px;
+        margin-left: 0px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .menu ul{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul li {
+        width: 80px;
+        margin: 2px;
+        font-size: 12px;
+    }
+}

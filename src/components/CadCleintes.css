@@ -1,0 +1,70 @@
+.Pag form {
+    width: 300px;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: .9rem;
+    color: #323232;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email {
+    width: 305px;
+    margin: 2px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome, .senha {
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+}
+
+.nome input {
+    margin: 2px 5px;
+    width: 145px;
+}
+
+.senha input {
+    margin: 0px 5px;
+    width: 145px;
+}
+
+.checkbox {
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .7rem;
+}
+
+.agreement {
+    width: 20px;
+}
+
+.Pag form input, .Pag form label {
+    border: none;
+}
+
+.btn, .btn-submit {
+    width: 100px;
+    background-color: #5353a6;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #3232324e;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.242);
+    border-radius: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #F1F1F1;
+    color: #5353a6;
+}
