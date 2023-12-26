@@ -4,40 +4,50 @@ import './Home.css'
 import img1 from '../imgs-slider/calca_fleir_azul_marinho_laço.jpg'
 import img2 from '../imgs-slider/calca_fleir_azul_claro_desbotada.jpg'
 import img3 from '../imgs-slider/calca_fleir_azul_marinho.jpg'
-import img4 from '../imgs-slider/calca_fleir_azul_marinho2.jpg'
 
 const Home = () => {
 
-    const box = document.querySelector(".container")
-    const imagens = document.querySelectorAll(".container img")
+  let time = 2000,
+    currentImageIndex = 0,
+    images = document.querySelectorAll(".slider .center"),
+    max = images.length;
 
-    let contador = 0
+  function nextImage() {
 
-    function slider() {
-        contador++
+    images[currentImageIndex]
+    .classList.remove("foco")
 
-        if (contador > imagens.length - 1) {
-            contador = 0
-        }
+    currentImageIndex++
 
-        box.style.transform = `translateX(${-contador * 700}px)`
+    if(currentImageIndex >= max)
+    currentImageIndex = 0
 
-    }
+    images[currentImageIndex]
+    .classList.add("foco")
+  }
 
-    setInterval(slider, 2000)
+  function start() {
+    setInterval(() => {
+      nextImage()
+    }, time)
+  }
 
-    return (
-    <div className='Pag'>
+  return (
+    <div onLoad={start()} className='Pag'>
+
       <h2>Bem vindo a nossa loja!</h2>
-        <h3>Lançamentos</h3>
-            <div className="carrossel">
-                <div className="container">
-                    <img className='img-carrossel' src={img1} alt="Calça Flair" />
-                    <img className='img-carrossel' src={img2} alt="Calça Flair" />
-                    <img className='img-carrossel' src={img3} alt="Calça Flair" />
-                    <img className='img-carrossel' src={img4} alt="Calça Flair" />
-                </div>
-            </div>
+      <h3>Lançamentos</h3>
+      <div className='Galeria'>
+
+        <div className="slider">
+          <img className='foco center' src={img1} alt="Imagem 1" />
+
+          <img className='center' src={img2} alt="Imagem 2" />
+
+          <img className='center' src={img3} alt="Imagem 3" />
+        </div>
+      </div>
+
     </div>
   )
 }

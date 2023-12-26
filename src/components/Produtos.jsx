@@ -14,7 +14,7 @@ const Produtos = () => {
                 <ul className="galeriaProdutos">
                     <li className="detalheProduto">
                         <h6>Jaqueta Couro</h6>
-                        <li className="imgProduto"><img src={imgJaquetaCouro} alt="" /></li>
+                        <li className="imgProduto"><img className='imgAlign' src={imgJaquetaCouro} alt="" /></li>
                         <li className="bodyProduto">Jaqueta em couro sintético masculina</li>
                         <li className="bodyProduto">Preço: R$ 320,00</li>
                     </li>
@@ -22,7 +22,7 @@ const Produtos = () => {
                 <ul className="galeriaProdutos">
                     <li className="detalheProduto">
                         <li><h6>Conjunto Moletom</h6></li>
-                        <li className="imgProduto"><img src={imgMoletomFem} alt="" /></li>
+                        <li className="imgProduto"><img className='imgAlign' src={imgMoletomFem} alt="" /></li>
                         <li className="bodyProduto">Conjunto de moletom feminino</li>
                         <li className="bodyProduto">Preço: R$ 120,00</li>
                     </li>
@@ -30,7 +30,7 @@ const Produtos = () => {
                 <ul className="galeriaProdutos">
                     <li className="detalheProduto">
                         <h6>Calça Jeans Azul</h6>
-                        <li className="imgProduto"><img src={imgCalcaJeansAzul} alt="" /></li>
+                        <li className="imgProduto"><img className='imgAlign' src={imgCalcaJeansAzul} alt="" /></li>
                         <li className="bodyProduto">Calça jeans azul feminina</li>
                         <li className="bodyProduto">Preço: R$ 140,00</li>
                     </li>
@@ -38,7 +38,7 @@ const Produtos = () => {
                 <ul className="galeriaProdutos">
                     <li className="detalheProduto">
                         <h6>Biquine Crouche</h6>
-                        <li className="imgProduto"><img src={imgBiquiniCroucheBege} alt="" /></li>
+                        <li className="imgProduto"><img className='imgAlign' src={imgBiquiniCroucheBege} alt="" /></li>
                         <li className="bodyProduto">Biquini em crouche bege</li>
                         <li className="bodyProduto">Preço: R$ 320,00</li>
                     </li>
